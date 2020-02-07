@@ -1,0 +1,1 @@
+python xmldiffs.py --path1=.\example\dir1\file.xml --path2=.\example\dir2\file.xml
