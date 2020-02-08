@@ -1,7 +1,17 @@
 # xmldiffs
-A tool for compare two xml files or compare xml files under two folder.
+A tool for compare two XML files or compare XML files under two folder. This tool use `xmltodict` transfer XML file to python's dictionary, then simple compare dictionary if is equal.
 
+##### Usage
 
+```
+xmldiffs --path1=.\example\dir1\file.xml --path2=.\example\dir2\file.xml
+```
+
+or
+
+```
+xmldiffs --path1=.\example\dir1          --path2=.\example\dir2
+```
 
 ##### Third parties
 
