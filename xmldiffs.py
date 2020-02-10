@@ -80,10 +80,10 @@ def scan(path: str):
 
 
 @click.command()
-@click.option('--path1', prompt=True)
-@click.option('--path2', prompt=True)
+@click.option('--path1', prompt=True, type=click.Path(exists=True))
+@click.option('--path2', prompt=True, type=click.Path(exists=True))
 def diff(path1: str, path2: str):
-    """A tool for compare xml files differences."""
+    """A tool for compare XML files differences."""
 
     if os.path.isfile(path1) and os.path.isfile(path2):
         report = Report()
