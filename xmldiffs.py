@@ -114,7 +114,7 @@ def diff(path1: str, path2: str):
 
         report.result()
     else:
-        logger.info('Arguments are out of exception.')
+        logger.info('All parameters must be folder path or file path.')
 
 
 if __name__ == '__main__':
